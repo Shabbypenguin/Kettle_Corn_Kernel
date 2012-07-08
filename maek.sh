@@ -37,4 +37,3 @@
     # In order for this part to work you need the mkbootimg tools
     $PACK/mkbootfs $PACK/ramdisk_tmp | gzip > $PACK/ramdisk.gz
     $PACK/mkbootimg --cmdline "console=null androidboot.hardware=qcom user_debug=31" --kernel $PACK/zImage --ramdisk $PACK/ramdisk.gz --base 0x80200000 --ramdiskaddr 0x81500000 -o $PACK/boot.img
-    tar -H ustar -c $PACK/boot.img > $PACK/Testing.tar
