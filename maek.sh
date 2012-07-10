@@ -52,4 +52,3 @@
 
     echo "packed" >> $LOG
     date >> $LOG
-    echo "" >> $LOG
